@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d2b54">
+<meta name="description" content="Basehor Well Summer Passport — collect event stamps and save your family's summer memories.">
+<title>Basehor Well · Summer Passport</title>
+<style>
+:root{--navy:#1d2b54;--green:#357f55;--purple:#805bb0;--blue:#438bd0;--teal:#299693;--orange:#e9753a;--gold:#bd9234;--paper:#fbf7ed;--ink:#26324f;--muted:#6f746f;--line:#e6dfd1;--white:#fffdf8;--shadow:0 10px 30px #1d2b5412}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f3f0e8;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{max-width:1080px;margin:auto;padding:14px 14px 42px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 2px 14px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.04em;color:var(--navy)}.brand img{width:44px;height:48px;object-fit:contain;border-radius:8px}.brand small{display:block;font-size:10px;letter-spacing:.12em;color:var(--green)}.privacy-pill{font-size:11px;font-weight:700;background:#e3eee4;color:#2b6847;border-radius:99px;padding:8px 10px;white-space:nowrap}.hero{background:var(--paper);border:1px solid #e7decc;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);position:relative}.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:10px;padding:clamp(20px,5vw,48px)}.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:11px;font-weight:850;color:var(--green)}h1,h2,h3,p{margin-top:0}h1{font-family:Georgia,serif;font-size:clamp(34px,6vw,62px);line-height:.98;color:var(--navy);margin:12px 0}.hero p{color:#66695f;line-height:1.6;max-width:430px}.hero-art{width:100%;max-height:260px;object-fit:contain}.button{border:0;border-radius:12px;padding:12px 16px;font-weight:800;background:var(--navy);color:white;box-shadow:0 3px 0 #121d3d;display:inline-flex;align-items:center;justify-content:center;gap:8px}.button.secondary{background:#e9e3d6;color:var(--navy);box-shadow:none}.button.green{background:var(--green);box-shadow:0 3px 0 #21553a}.button.small{padding:8px 11px;font-size:13px}.button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #438bd0;outline-offset:2px}.nav{display:flex;gap:7px;overflow:auto;padding:14px 0 18px;scrollbar-width:none}.nav button{border:1px solid #ded8cb;background:#fffdf8;color:#535a61;border-radius:99px;padding:10px 14px;white-space:nowrap;font-size:13px;font-weight:800}.nav button.active{background:var(--navy);border-color:var(--navy);color:white}.page{display:none}.page.active{display:block}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:4px 2px 16px}.section-head h2{font: bold 29px Georgia,serif;color:var(--navy);margin:0 0 4px}.section-head p{font-size:13px;color:var(--muted);margin:0}.card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.stat{padding:15px;background:white;border:1px solid var(--line);border-radius:15px}.stat strong{font: bold 26px Georgia,serif;color:var(--navy);display:block}.stat span{font-size:11px;color:var(--muted);font-weight:700}.event-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.event-card{background:var(--white);border:1px solid var(--line);border-radius:17px;padding:16px;display:flex;gap:12px;align-items:flex-start}.event-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:24px;flex-shrink:0}.event-card h3{font-size:16px;margin:2px 0 4px;color:var(--navy)}.event-card p{font-size:12px;color:var(--muted);margin:0 0 9px;line-height:1.45}.event-actions{display:flex;flex-wrap:wrap;gap:6px}.stamp{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;border:1px dashed #b7a98f;border-radius:7px;padding:5px 7px;color:#6f624d;transform:rotate(-2deg)}.stamp.official{border:2px solid var(--green);color:var(--green);transform:rotate(2deg)}.event-card.completed{border-color:#b6d3bc;background:#f5faf3}.photo-tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.memory{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden}.memory img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#ece7dc;display:block}.memory .memory-body{padding:10px}.memory time{font-size:10px;color:var(--muted)}.memory textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px;resize:vertical;min-height:58px;font-size:12px;margin:6px 0}.memory .remove{border:0;background:transparent;color:#a63d2b;font-size:12px;font-weight:800;padding:3px}.empty{border:1px dashed #cfc5b2;border-radius:18px;padding:32px 20px;text-align:center;color:var(--muted);grid-column:1/-1}.empty .emoji{font-size:36px}.empty h3{color:var(--navy);margin:8px 0}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.field label{font-size:12px;font-weight:800;color:#505960}.field input,.field textarea{border:1px solid var(--line);border-radius:10px;background:white;padding:11px;color:var(--ink);width:100%}.notice{background:#eef4ee;border-left:4px solid var(--green);padding:12px 14px;border-radius:8px;font-size:12px;line-height:1.5;color:#345844}.warning{background:#fff3df;border-left:4px solid var(--gold);padding:12px 14px;border-radius:8px;font-size:12px;line-height:1.5;color:#72521a}.footer{text-align:center;color:#7d807b;font-size:11px;padding:25px 8px}.modal-backdrop{position:fixed;inset:0;background:#111a2ed9;display:none;align-items:center;justify-content:center;padding:16px;z-index:10}.modal-backdrop.show{display:flex}.modal{background:var(--paper);border-radius:20px;padding:22px;max-width:470px;width:100%;max-height:90vh;overflow:auto}.modal h2{font: bold 26px Georgia,serif;color:var(--navy)}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--navy);color:white;padding:12px 16px;border-radius:99px;font-size:13px;z-index:20;display:none;box-shadow:var(--shadow);max-width:90vw}.toast.show{display:block}.small-note{font-size:11px;color:var(--muted);line-height:1.5}.stamp-gallery{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.stamp-tile{width:100px;min-height:100px;border:2px dashed #c8bdab;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8px;color:#777}.stamp-tile span{font-size:28px}.stamp-tile strong{font-size:10px;text-transform:uppercase;margin-top:5px}.stamp-tile.earned{border:2px solid var(--green);color:var(--green);background:#eff7ee}
+@media(max-width:650px){.app{padding:8px 10px 28px}.hero-inner{grid-template-columns:1fr;padding:24px}.hero-art{max-height:150px;grid-row:1}.hero-copy{grid-row:2}.hero h1{font-size:42px}.event-grid{grid-template-columns:1fr}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{gap:7px}.stat{padding:12px}.stat strong{font-size:23px}.section-head{align-items:start;flex-direction:column}.form-row{grid-template-columns:1fr}.brand img{width:36px;height:40px}.privacy-pill{font-size:10px;padding:7px 8px}}
+@media print{body{background:white}.topbar,.nav,.button,.photo-tools,.footer{display:none!important}.page{display:block!important;break-after:page}.card,.hero{box-shadow:none}.app{max-width:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><img src="basehor-well-logo.png" alt="Basehor Well flower logo"><div>BASEHOR WELL<small>PARKS & REC WELLNESS · STRONGER TOGETHER</small></div></div>
+  <div class="privacy-pill">🔒 Your scrapbook stays on this device</div>
+</header>
+
+<section class="hero">
+ <div class="hero-inner">
+  <div class="hero-copy">
+   <div class="eyebrow">Basehor Parks & Recreation</div>
+   <h1>Make this<br>summer count.</h1>
+   <p>Collect event stamps, save your favorite photos, and keep a little piece of Basehor summer with you.</p>
+   <button class="button green" onclick="startPassport()">Start my passport <span aria-hidden="true">→</span></button>
+   <p class="small-note" style="margin:12px 0 0">No account needed. Your memories are stored in this browser.</p>
+  </div>
+  <img class="hero-art" src="basehor-well-logo.png" alt="Basehor Well — Stronger Together">
+ </div>
+</section>
+
+<nav class="nav" aria-label="Passport sections">
+ <button class="active" data-page="home">🏡 Home</button>
+ <button data-page="passport">🎟️ My Passport</button>
+ <button data-page="scrapbook">📸 My Scrapbook</button>
+ <button data-page="events">📅 Summer Events</button>
+ <button data-page="backup">💾 Backup & Settings</button>
+</nav>
+
+<main>
+<section class="page active" id="page-home">
+ <div class="section-head"><div><h2 id="welcomeTitle">Your summer story starts here</h2><p>A little adventure, a lot of memories.</p></div></div>
+ <div class="stats">
+  <div class="stat"><strong id="statAttended">0</strong><span>EVENTS CHECKED OFF</span></div>
+  <div class="stat"><strong id="statOfficial">0</strong><span>OFFICIAL STAMPS</span></div>
+  <div class="stat"><strong id="statPhotos">0</strong><span>MEMORIES SAVED</span></div>
+ </div>
+ <div class="card" style="margin-bottom:14px"><div class="section-head"><div><h2 style="font-size:22px">Your summer, your way</h2><p>Pick an adventure, collect a stamp, and add a photo to remember it.</p></div></div>
+ <div class="event-grid">
+  <div class="event-card"><div class="event-icon" style="background:#f8e7dc">🚲</div><div><h3>Get out and explore</h3><p>Find a community event, trail, or outdoor adventure.</p><button class="button secondary small" onclick="go('events')">Explore events</button></div></div>
+  <div class="event-card"><div class="event-icon" style="background:#e1f0e8">📷</div><div><h3>Save the moment</h3><p>Add your favorite photo and a caption to your scrapbook.</p><button class="button secondary small" onclick="go('scrapbook')">Add a memory</button></div></div>
+ </div></div>
+ <div class="notice"><strong>Family tip:</strong> Bookmark this page or add it to your phone's home screen. Return using the same browser to see your saved passport.</div>
+</section>
+
+<section class="page" id="page-passport">
+ <div class="section-head"><div><h2>My Summer Passport</h2><p>Check off the adventures you've attended and collect official stamps.</p></div><button class="button secondary small" onclick="editFamily()">✎ Family name</button></div>
+ <div class="card" style="margin-bottom:14px"><div class="eyebrow">Passport holder</div><h2 id="familyDisplay" style="font: bold 25px Georgia,serif;margin:6px 0;color:var(--navy)">My Basehor Family</h2><p class="small-note">Self-checks are for your own memories. Official stamps are marked separately.</p><div class="stamp-gallery" id="stampGallery"></div></div>
+ <div class="event-grid" id="passportEvents"></div>
+</section>
+
+<section class="page" id="page-scrapbook">
+ <div class="section-head"><div><h2>My Summer Scrapbook</h2><p>Photos, little stories, and the moments you want to keep.</p></div></div>
+ <div class="card" style="margin-bottom:14px">
+  <div class="photo-tools"><button class="button green" onclick="document.getElementById('photoInput').click()">＋ Add photos</button><button class="button secondary" onclick="go('backup')">Back up scrapbook</button><input id="photoInput" type="file" accept="image/*" multiple hidden></div>
+  <div class="notice">Choose photos from your camera roll. Add a caption to remember who was there, what happened, or your favorite part of the day. Photos stay in this browser unless you export a backup.</div>
+ </div>
+ <div class="photo-grid" id="photoGrid"></div>
+</section>
+
+<section class="page" id="page-events">
+ <div class="section-head"><div><h2>Summer Events</h2><p>Use this guide to plan your next Basehor adventure.</p></div></div>
+ <div class="warning" style="margin-bottom:14px"><strong>Planning note:</strong> This starter version includes sample event cards. Replace the sample titles and dates with the confirmed Basehor Parks & Recreation summer schedule before publishing.</div>
+ <div class="event-grid" id="eventsList"></div>
+</section>
+
+<section class="page" id="page-backup">
+ <div class="section-head"><div><h2>Backup & Settings</h2><p>Keep your memories safe and make this passport yours.</p></div></div>
+ <div class="card" style="margin-bottom:14px">
+  <h3>Personalize your passport</h3>
+  <div class="field"><label for="familyName">Family or scrapbook name</label><input id="familyName" maxlength="60" placeholder="e.g., The Johnson Family"></div>
+  <button class="button" onclick="saveFamily()">Save name</button>
+ </div>
+ <div class="card" style="margin-bottom:14px">
+  <h3>Save a backup</h3><p class="small-note">Export your passport, event checkoffs, official stamps, captions, and photos into a backup file. Keep it somewhere safe. Large photo collections can create a large file.</p>
+  <div class="photo-tools"><button class="button green" onclick="exportBackup()">⬇ Download backup</button><button class="button secondary" onclick="document.getElementById('restoreInput').click()">↥ Restore backup</button><input id="restoreInput" type="file" accept="application/json,.json" hidden></div>
+  <div class="notice">For extra protection, save important photos to your camera roll too. Browser storage can be cleared by device settings or lost if you change phones.</div>
+ </div>
+ <div class="card" style="margin-bottom:14px">
+  <h3>Privacy, in plain language</h3>
+  <ul class="small-note" style="padding-left:20px;line-height:1.8"><li>No account or login is required.</li><li>Photos and passport progress are saved locally in this browser.</li><li>Basehor does not receive or see the photos saved here.</li><li>Anyone with access to this device/browser may be able to open this scrapbook.</li><li>Official QR stamps are for fun recognition, not secure proof of attendance.</li></ul>
+ </div>
+ <div class="card">
+  <h3>Reset this passport</h3><p class="small-note">This permanently deletes local passport data and saved photos from this browser. Export a backup first if you want to keep them.</p><button class="button secondary" onclick="resetPassport()">Reset local scrapbook</button>
+ </div>
+</section>
+</main>
+<footer class="footer">BASEHOR WELL · PARKS & REC WELLNESS · STRONGER TOGETHER<br>Made for summer memories in Basehor, Kansas.</footer>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal"><h2 id="modalTitle">Welcome to your passport</h2><div id="modalBody"></div><div class="modal-actions" id="modalActions"></div></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const DB_NAME='basehor-well-summer-passport'; const DB_VERSION=1; let db;
+const DEFAULT_EVENTS=[
+ {id:'bike-bash',title:'Basehor Bike Bash',date:'Date to be announced',desc:'Roll out for a community ride and family fun.',emoji:'🚲',color:'#f8e7dc',code:'BIKEBASH'},
+ {id:'summer-festival',title:'Summer Community Festival',date:'Date to be announced',desc:'Celebrate summer with neighbors and local activities.',emoji:'🎪',color:'#e8e2f5',code:'SUMMERFEST'},
+ {id:'park-adventure',title:'Park Adventure',date:'Choose a summer day',desc:'Explore a park, play outside, and enjoy the sunshine.',emoji:'🌳',color:'#e1f0e8',code:'PARKDAY'},
+ {id:'family-fun',title:'Family Fun Day',date:'Date to be announced',desc:'Make time for games, laughter, and a family memory.',emoji:'☀️',color:'#fff0ce',code:'FAMILYFUN'},
+ {id:'wellness-walk',title:'Community Wellness Walk',date:'Date to be announced',desc:'Move your body and connect with the community.',emoji:'👟',color:'#dff1ef',code:'WELLNESS'},
+ {id:'community-cleanup',title:'Community Green Day',date:'Date to be announced',desc:'Care for the places that bring our community together.',emoji:'🌼',color:'#e1f0e8',code:'GREENDAY'}
+];
+let state={family:'My Basehor Family',checked:[],official:[],photos:[]};
+function openDB(){return new Promise((resolve,reject)=>{if(!('indexedDB'in window)){reject(Error('IndexedDB not available'));return}const req=indexedDB.open(DB_NAME,DB_VERSION);req.onupgradeneeded=()=>{const d=req.result;if(!d.objectStoreNames.contains('state'))d.createObjectStore('state');if(!d.objectStoreNames.contains('photos'))d.createObjectStore('photos',{keyPath:'id'})};req.onsuccess=()=>{db=req.result;resolve(db)};req.onerror=()=>reject(req.error)})}
+function getStore(store,mode='readonly'){return db.transaction(store,mode).objectStore(store)}
+function dbGet(store,key){return new Promise((res,rej)=>{const r=getStore(store).get(key);r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
+function dbPut(store,value,key){return new Promise((res,rej)=>{const r=key===undefined?getStore(store,'readwrite').put(value):getStore(store,'readwrite').put(value,key);r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
+function dbDelete(store,key){return new Promise((res,rej)=>{const r=getStore(store,'readwrite').delete(key);r.onsuccess=()=>res();r.onerror=()=>rej(r.error)})}
+function allPhotos(){return new Promise((res,rej)=>{const r=getStore('photos').getAll();r.onsuccess=()=>res(r.result||[]);r.onerror=()=>rej(r.error)})}
+async function saveState(){await dbPut('state',state,'main');renderAll()}
+async function init(){try{await openDB();const saved=await dbGet('state','main');if(saved)state={...state,...saved};state.photos=await allPhotos();renderAll();handleStampLink()}catch(e){toast('Storage could not be opened. Try a current version of Safari, Chrome, or Edge.');console.error(e)}}
+function renderAll(){document.getElementById('welcomeTitle').textContent=state.family==='My Basehor Family'?'Your summer story starts here':`Welcome, ${state.family}!`;document.getElementById('familyDisplay').textContent=state.family;document.getElementById('familyName').value=state.family;document.getElementById('statAttended').textContent=state.checked.length;document.getElementById('statOfficial').textContent=state.official.length;document.getElementById('statPhotos').textContent=state.photos.length;renderEvents();renderStamps();renderPhotos()}
+function renderEvents(){const make=(e,mode)=>{const checked=state.checked.includes(e.id),official=state.official.includes(e.id);return `<article class="event-card ${checked?'completed':''}"><div class="event-icon" style="background:${e.color}">${e.emoji}</div><div style="min-width:0"><h3>${esc(e.title)}</h3><p><strong>${esc(e.date)}</strong><br>${esc(e.desc)}</p><div class="event-actions">${checked?'<span class="stamp">✓ Attended</span>':''}${official?'<span class="stamp official">★ Official</span>':''}</div><div class="event-actions" style="margin-top:8px"><button class="button secondary small" onclick="toggleCheck('${e.id}')">${checked?'Undo check':'I attended'}</button><button class="button small" onclick="go('scrapbook');setPhotoEvent('${e.id}')">＋ Memory</button></div></div></article>`};document.getElementById('passportEvents').innerHTML=DEFAULT_EVENTS.map(e=>make(e,'p')).join('');document.getElementById('eventsList').innerHTML=DEFAULT_EVENTS.map(e=>make(e,'e')).join('')}
+function renderStamps(){document.getElementById('stampGallery').innerHTML=DEFAULT_EVENTS.map(e=>{const earned=state.official.includes(e.id);return `<div class="stamp-tile ${earned?'earned':''}"><span>${earned?'★':e.emoji}</span><strong>${earned?'Official stamp': 'Stamp to collect'}</strong><small>${esc(e.title)}</small></div>`}).join('')}
+function renderPhotos(){const grid=document.getElementById('photoGrid');if(!state.photos.length){grid.innerHTML='<div class="empty"><div class="emoji">📷</div><h3>Your scrapbook is waiting</h3><p>Add your first summer photo to get started.</p><button class="button green" onclick="document.getElementById(\'photoInput\').click()">Add photos</button></div>';return}grid.innerHTML=state.photos.slice().sort((a,b)=>b.created-a.created).map(p=>`<article class="memory"><img src="${URL.createObjectURL(p.blob)}" alt="${esc(p.caption||'Summer memory')}" loading="lazy"><div class="memory-body"><time>${new Date(p.created).toLocaleDateString()}</time><textarea aria-label="Photo caption" placeholder="Add a caption..." onchange="updateCaption('${p.id}',this.value)">${esc(p.caption||'')}</textarea><button class="remove" onclick="deletePhoto('${p.id}')">Remove photo</button></div></article>`).join('')}
+function go(page){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
+function startPassport(){if(state.family==='My Basehor Family')editFamily();else go('passport')}
+function showModal(title,body,actions){document.getElementById('modalTitle').textContent=title;document.getElementById('modalBody').innerHTML=body;document.getElementById('modalActions').innerHTML=actions;document.getElementById('modalBackdrop').classList.add('show')}
+function closeModal(){document.getElementById('modalBackdrop').classList.remove('show')}
+function editFamily(){showModal('Name your scrapbook','<p>Choose a family nickname or a name for your summer journal. This stays on this device.</p><div class="field"><label for="modalFamily">Scrapbook name</label><input id="modalFamily" maxlength="60" value="'+esc(state.family==='My Basehor Family'?'':state.family)+'" placeholder="e.g., The Johnson Family"></div>','<button class="button secondary" onclick="closeModal()">Later</button><button class="button green" onclick="saveModalFamily()">Save name</button>');setTimeout(()=>document.getElementById('modalFamily')?.focus(),100)}
+async function saveModalFamily(){const v=document.getElementById('modalFamily').value.trim();state.family=v||'My Basehor Family';await saveState();closeModal();go('passport');toast('Passport name saved!')}
+async function saveFamily(){state.family=document.getElementById('familyName').value.trim()||'My Basehor Family';await saveState();toast('Passport name saved!')}
+async function toggleCheck(id){state.checked=state.checked.includes(id)?state.checked.filter(x=>x!==id):[...state.checked,id];await saveState();toast('Passport updated')}
+function setPhotoEvent(id){const e=DEFAULT_EVENTS.find(x=>x.id===id);if(e)sessionStorage.setItem('photoPrompt',`Memory from ${e.title}: `);document.getElementById('photoInput').click()}
+document.getElementById('photoInput').addEventListener('change',async ev=>{const files=[...ev.target.files];for(const file of files){if(!file.type.startsWith('image/'))continue;if(file.size>12*1024*1024){toast('One photo was over 12 MB and skipped.');continue}const blob=await compressImage(file);const p={id:crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random(),blob,caption:sessionStorage.getItem('photoPrompt')||'',created:Date.now(),type:file.type};await dbPut('photos',p)}sessionStorage.removeItem('photoPrompt');state.photos=await allPhotos();renderAll();go('scrapbook');ev.target.value='';toast('Photos added to your scrapbook')});
+async function compressImage(file){return new Promise(resolve=>{const img=new Image(),url=URL.createObjectURL(file);img.onload=()=>{const max=1600,scale=Math.min(1,max/Math.max(img.width,img.height)),c=document.createElement('canvas');c.width=Math.round(img.width*scale);c.height=Math.round(img.height*scale);c.getContext('2d').drawImage(img,0,0,c.width,c.height);c.toBlob(b=>{URL.revokeObjectURL(url);resolve(b||file)},'image/jpeg',.84)};img.onerror=()=>{URL.revokeObjectURL(url);resolve(file)};img.src=url})}
+async function updateCaption(id,caption){const p=await dbGet('photos',id);if(!p)return;p.caption=caption;await dbPut('photos',p);state.photos=await allPhotos();renderAll()}
+async function deletePhoto(id){if(!confirm('Remove this photo and its caption from this scrapbook?'))return;await dbDelete('photos',id);state.photos=await allPhotos();renderAll();toast('Photo removed')}
+function handleStampLink(){const params=new URLSearchParams(location.search);const code=params.get('stamp');if(!code)return;const event=DEFAULT_EVENTS.find(e=>e.code.toLowerCase()===code.toLowerCase());if(!event){toast('That event stamp code was not recognized.');return}if(!state.official.includes(event.id)){state.official.push(event.id);if(!state.checked.includes(event.id))state.checked.push(event.id);saveState().then(()=>{showModal('Official stamp collected!',`<p>You collected the official <strong>${esc(event.title)}</strong> stamp. Great job getting out and enjoying Basehor!</p><div class="stamp-gallery"><div class="stamp-tile earned"><span>${event.emoji}</span><strong>Official stamp</strong><small>${esc(event.title)}</small></div></div>`,'<button class="button green" onclick="closeModal();history.replaceState({},\'\',location.pathname);go(\'passport\')">View my passport</button>')})}else{showModal('You already collected this stamp!',`<p>Your official stamp for <strong>${esc(event.title)}</strong> is already in your passport.</p>`,'<button class="button green" onclick="closeModal();history.replaceState({},\'\',location.pathname);go(\'passport\')">View my passport</button>')}}
+async function exportBackup(){const photos=await allPhotos();const packed=[];for(const p of photos){packed.push({id:p.id,caption:p.caption,created:p.created,type:'image/jpeg',data:await blobToDataURL(p.blob)})}const backup={format:'basehor-well-passport-v1',created:new Date().toISOString(),state:{...state,photos:undefined},photos:packed};const blob=new Blob([JSON.stringify(backup)],{type:'application/json'});downloadBlob(blob,'basehor-summer-passport-backup.json');toast('Backup downloaded')}
+function blobToDataURL(blob){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(blob)})}
+function dataURLtoBlob(url){const [meta,data]=url.split(',');const mime=(meta.match(/:(.*?);/)||[])[1]||'image/jpeg';const bin=atob(data);const arr=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)arr[i]=bin.charCodeAt(i);return new Blob([arr],{type:mime})}
+function downloadBlob(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+document.getElementById('restoreInput').addEventListener('change',async ev=>{const file=ev.target.files[0];if(!file)return;try{const b=JSON.parse(await file.text());if(b.format!=='basehor-well-passport-v1')throw Error('This is not a Basehor passport backup.');if(!confirm('Restore this backup? It will replace the passport data currently saved in this browser.'))return;const tx=db.transaction(['state','photos'],'readwrite');tx.objectStore('state').put(b.state,'main');tx.objectStore('photos').clear();for(const p of (b.photos||[])){tx.objectStore('photos').put({id:p.id,caption:p.caption,created:p.created,blob:dataURLtoBlob(p.data),type:'image/jpeg'})}tx.oncomplete=async()=>{state={...state,...b.state};state.photos=await allPhotos();renderAll();toast('Backup restored')};tx.onerror=()=>toast('Could not restore backup')}catch(e){alert('Could not restore backup: '+e.message)}finally{ev.target.value=''}});
+async function resetPassport(){if(!confirm('Delete all saved passport data and photos from this browser? This cannot be undone unless you have a backup.'))return;const tx=db.transaction(['state','photos'],'readwrite');tx.objectStore('state').clear();tx.objectStore('photos').clear();tx.oncomplete=()=>{state={family:'My Basehor Family',checked:[],official:[],photos:[]};renderAll();toast('Local passport reset')}}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+let toastTimer;function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),3000)}
+init();
+</script>
+</body>
+</html>
