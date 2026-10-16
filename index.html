@@ -59,7 +59,7 @@
 
 <section class="page" id="page-passport">
  <div class="section-head"><div><h2>My Summer Passport</h2><p>Check off the adventures you've attended and collect official stamps.</p></div><button class="button secondary small" onclick="editFamily()">✎ Family name</button></div>
- <div class="card" style="margin-bottom:14px"><div class="eyebrow">Passport holder</div><h2 id="familyDisplay" style="font: bold 25px Georgia,serif;margin:6px 0;color:var(--navy)">My Basehor Family</h2><p class="small-note">Self-checks are for your own memories. Official stamps are marked separately.</p><div class="stamp-gallery" id="stampGallery"></div></div>
+ <div class="card" style="margin-bottom:14px"><div class="eyebrow">Passport holder</div><h2 id="familyDisplay" style="font: bold 25px Georgia,serif;margin:6px 0;color:var(--navy)">My Basehor Family</h2><p class="small-note">Self-checks are for your own memories. At City events, scan the event QR code to collect an official stamp.</p><div class="stamp-gallery" id="stampGallery"></div></div>
  <div class="event-grid" id="passportEvents"></div>
 </section>
 
@@ -110,12 +110,12 @@
 <script>
 const DB_NAME='basehor-well-summer-passport'; const DB_VERSION=1; let db;
 const DEFAULT_EVENTS=[
- {id:'bike-bash',title:'Basehor Bike Bash',date:'Date to be announced',desc:'Roll out for a community ride and family fun.',emoji:'🚲',color:'#f8e7dc',code:'BIKEBASH'},
- {id:'summer-festival',title:'Summer Community Festival',date:'Date to be announced',desc:'Celebrate summer with neighbors and local activities.',emoji:'🎪',color:'#e8e2f5',code:'SUMMERFEST'},
- {id:'park-adventure',title:'Park Adventure',date:'Choose a summer day',desc:'Explore a park, play outside, and enjoy the sunshine.',emoji:'🌳',color:'#e1f0e8',code:'PARKDAY'},
- {id:'family-fun',title:'Family Fun Day',date:'Date to be announced',desc:'Make time for games, laughter, and a family memory.',emoji:'☀️',color:'#fff0ce',code:'FAMILYFUN'},
- {id:'wellness-walk',title:'Community Wellness Walk',date:'Date to be announced',desc:'Move your body and connect with the community.',emoji:'👟',color:'#dff1ef',code:'WELLNESS'},
- {id:'community-cleanup',title:'Community Green Day',date:'Date to be announced',desc:'Care for the places that bring our community together.',emoji:'🌼',color:'#e1f0e8',code:'GREENDAY'}
+ {id:'bike-bash',title:'Basehor Bike Bash',date:'Date to be announced',desc:'Roll out for a community ride and family fun.',emoji:'🚲',color:'#f8e7dc',code:'xXPF6wnBr4oK3BMji5YuQzjhaaBJv2mX'},
+ {id:'summer-festival',title:'Summer Community Festival',date:'Date to be announced',desc:'Celebrate summer with neighbors and local activities.',emoji:'🎪',color:'#e8e2f5',code:'XqVj0ImNoXwSOHsfzt9TzFmjBO9cfM'},
+ {id:'park-adventure',title:'Park Adventure',date:'Choose a summer day',desc:'Explore a park, play outside, and enjoy the sunshine.',emoji:'🌳',color:'#e1f0e8',code:'3maOjCoMy0VpbsPXUdMLvNi5miNDCqY'},
+ {id:'family-fun',title:'Family Fun Day',date:'Date to be announced',desc:'Make time for games, laughter, and a family memory.',emoji:'☀️',color:'#fff0ce',code:'TV1hPsqRTugkXeN4IyGNw0bYNquI3Soo'},
+ {id:'wellness-walk',title:'Community Wellness Walk',date:'Date to be announced',desc:'Move your body and connect with the community.',emoji:'👟',color:'#dff1ef',code:'ahEkOsNYXLPHOQ2cD04vqeGvq0IJrYTP'},
+ {id:'community-cleanup',title:'Community Green Day',date:'Date to be announced',desc:'Care for the places that bring our community together.',emoji:'🌼',color:'#e1f0e8',code:'jpyuyb6JrykH8wa4jdZVfbush4WKr71'}
 ];
 let state={family:'My Basehor Family',checked:[],official:[],photos:[]};
 function openDB(){return new Promise((resolve,reject)=>{if(!('indexedDB'in window)){reject(Error('IndexedDB not available'));return}const req=indexedDB.open(DB_NAME,DB_VERSION);req.onupgradeneeded=()=>{const d=req.result;if(!d.objectStoreNames.contains('state'))d.createObjectStore('state');if(!d.objectStoreNames.contains('photos'))d.createObjectStore('photos',{keyPath:'id'})};req.onsuccess=()=>{db=req.result;resolve(db)};req.onerror=()=>reject(req.error)})}
